@@ -19,8 +19,6 @@ int main() {
     char estado2 [20];
     char cidade[20];
     char cidade2[20];
-    char codigo;
-    char codigo2;
     int populacao;
     int populacao2;
     float area;
@@ -40,9 +38,6 @@ int main() {
     printf("digite o nome da cidade: \n");
     scanf("%s", cidade);
 
-    printf("digite o codigo da carta: \n");
-    scanf(" %c", &codigo);
-    
     printf("digite a população geral: \n");
     scanf("%d", &populacao);
 
@@ -60,9 +55,6 @@ int main() {
 
     printf("digite o nome da cidade: \n");
     scanf("%s", cidade2);
-
-    printf("digite o codigo da carta: \n");
-    scanf(" %c", &codigo2);
 
     printf("digite a população geral: \n");
     scanf("%d", &populacao2);
@@ -84,7 +76,6 @@ int main() {
 
     printf("o estado selecionado foi: %s\n", estado);
     printf("a cidade selecionada foi: %s\n", cidade);
-    printf("o codigo da carta é: %c\n", codigo);
     printf("população geral: %d\n", populacao);
     printf("área total: %f\n", area);
     printf("pib: %f\n", pib);
@@ -92,7 +83,6 @@ int main() {
 
     printf("o estado selecionado foi: %s\n", estado2);
     printf("a cidade selecionada foi: %s\n", cidade2);
-    printf("o codigo da carta é: %c\n", codigo2);
     printf("população geral: %d\n", populacao2);
     printf("área total: %f\n", area2);
     printf("pib: %f\n", pib2);
