@@ -11,6 +11,7 @@ int main() {
     //INICIALIZAÇÃO DA PRIMEIRA CARTA.
 
     printf("Desafio Do Super Trunfo\n");
+    printf("   Nível Aventureiro\n");
            
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -29,6 +30,10 @@ int main() {
     float pib2;
     int npt;
     int npt2;
+    float densidade_populacional;
+    float pib_per_capta;
+    float densidade_populacional2;
+    float pib_per_capta2;
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -57,6 +62,9 @@ int main() {
     printf("digite o numero de pontos turísticos: \n");
     scanf("%d", &npt);
 
+    densidade_populacional = (float)(populacao + area) / 2;
+    pib_per_capta = (pib + area) / 2;
+
     // DADOS DA SEGUNDA CARTA
 
     printf("digite o nome do estado: \n");
@@ -80,7 +88,8 @@ int main() {
     printf("digite o numero de pontos turísticos: \n");
     scanf("%d", &npt2);
 
-
+    densidade_populacional = (float)(populacao2 + area2) / 2;
+    pib_per_capta = (pib2 + area2) / 2;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -94,6 +103,8 @@ int main() {
     printf("Área: %f\n", area);
     printf("Pib: %f\n", pib);
     printf("Número de Pontos Turísticos: %d\n", npt);
+    printf("Densidade Populacional: %2.f\n", densidade_populacional);
+    printf("Pib Per Capta: %2.f\n", pib_per_capta);
 
     printf("CARTA 2:\n");
     printf("Estado: %c\n", estado2);
@@ -103,6 +114,8 @@ int main() {
     printf("Área: %f\n", area2);
     printf("Pib: %f\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", npt2);
+    printf("Densidade Populacional: %2.f\n", densidade_populacional2);
+    printf("Pib Per Capta: %2.f\n", pib_per_capta2);
 
     return 0;
 
