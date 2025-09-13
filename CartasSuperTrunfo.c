@@ -64,6 +64,7 @@ int main() {
 
     densidade_populacional = (float)(populacao + area) / 2;
     pib_per_capta = (pib + area) / 2;
+    float superpoder = (float) (populacao + area + pib + npt + pib_per_capta);
 
     // DADOS DA SEGUNDA CARTA
 
@@ -90,6 +91,7 @@ int main() {
 
     densidade_populacional2 = (float)(populacao2 + area2) / 2;
     pib_per_capta2 = (pib2 + area2) / 2;
+    float superpoder2 = (float) (populacao2 + area2 + pib2 + npt2 + pib_per_capta2);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -105,6 +107,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", npt);
     printf("Densidade Populacional: %.2f\n", densidade_populacional);
     printf("Pib Per Capta: %.2f\n", pib_per_capta);
+    printf("super poder: %.2f\n", superpoder);
 
     printf("CARTA 2:\n");
     printf("Estado: %c\n", estado2);
