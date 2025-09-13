@@ -22,16 +22,24 @@ int main() {
     char codigo2[20];
     char cidade[20];
     char cidade2[20];
+
+    //apartir daqui vão sair as comparações
+
     int populacao;
     int populacao2;
+
     float area;
     float area2;
+
     float pib;
     float pib2;
+
     int npt;
     int npt2;
+
     float densidade_populacional;
     float pib_per_capta;
+
     float densidade_populacional2;
     float pib_per_capta2;
 
@@ -119,7 +127,18 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", npt2);
     printf("Densidade Populacional: %.2f\n", densidade_populacional2);
     printf("Pib Per Capta: %.2f\n", pib_per_capta2);
+    printf("super poder: %.2f\n", superpoder2);
 
+    //COMPARANDO OS PODERES DE CADA CARTA:
+
+    int resultado_pop = populacao > populacao2;
+    printf("população: %d\n", resultado_pop);
+    
+    float resultado_are = area > area2;
+
+    float resultado_pib = pib > pib2;
+
+   
     return 0;
 
 }
