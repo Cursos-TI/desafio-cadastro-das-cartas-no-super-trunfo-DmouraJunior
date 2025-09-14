@@ -132,11 +132,26 @@ int main() {
     //COMPARANDO OS PODERES DE CADA CARTA:
 
     int resultado_pop = populacao > populacao2;
-    printf("população: %d\n", resultado_pop);
+    printf("População: %d\n", resultado_pop);
     
     float resultado_are = area > area2;
+    printf("Área: %2.f\n", resultado_are);
 
     float resultado_pib = pib > pib2;
+    printf("Pib: %2.f\n", resultado_pib);
+
+    int resultado_npt = npt > npt2;
+    printf("Numeros de Pontos Turísticos: %d\n", resultado_npt);
+
+    float resultado_den = densidade_populacional < densidade_populacional2;
+    printf("Densidade Popuulacional: %2.f\n", resultado_den);
+
+    float resultado_pibp = pib_per_capta > pib_per_capta2;
+    printf("Pib Per Capta: %2.f\n", resultado_pibp);
+
+    float resultado_sp = superpoder > superpoder2;
+    printf("Super Poder: %2.f\n", resultado_sp);
+
 
    
     return 0;
